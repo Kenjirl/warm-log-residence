@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#DCD7C9" />
+    <meta
+        name="description"
+        content="Tipe-tipe rumah bersalju."
+    />
+
+    <link rel="icon" type="image/x-icon" href="./img/icon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/5b8fa639bb.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+        @theme {
+            --color-brown: #A27B5C;
+            --color-dark-green: #2C3930;
+            --color-fur-white: #DCD7C9;
+            --color-light-green: #3F4F44;
+
+            --font-montserrat: "Montserrat", "sans-serif";
+        }
+
+        a, button {
+            outline: none;
+        }
+    </style>
+
+    <title>Warm Log Residence</title>
+</head>
+<body class="bg-fur-white font-montserrat">
+    <div class="max-w-[1600px] mx-auto">
+        <header class="sticky top-0 w-full max-w-[1600px] bg-fur-white z-40">
+            <nav class="w-full px-8 py-4 lg:px-16 lg:py-8 flex items-center justify-between transition-shadow">
+                <div>
+                    <a href="./index.html" id="logo">
+                        <h2 class="text-[20px] md:text-[28px]/7 text-brown font-bold">
+                            WarmLog 
+                            <br>
+                            <span class="text-[24px] lg:text-[32px] text-black font-light">
+                                Residence.
+                            </span>
+                        </h2>
+                    </a>
+                </div>
+
+                <div class="fixed lg:relative top-0 left-full lg:left-0 w-full lg:w-fit h-screen lg:h-fit flex lg:block items-center justify-center bg-fur-white transition-all duration-[400ms]" id="navContainer">
+                    <button class="absolute top-8 left-8 lg:hidden size-[32px] flex items-center justify-center border border-brown rounded-md text-brown
+                        focus:bg-brown focus:text-fur-white transition-colors"
+                        id="closeNavBtn">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+
+                    <ul class="flex flex-col lg:flex-row items-center justify-center gap-12 text-[16.5px]">
+                        <li>
+                            <a class="px-4 py-2 text-light-green rounded-[1px] hover:text-light-green hover:ring focus:text-light-green focus:ring active:text-brown transition-all" 
+                                href="./index.html">Beranda</a>
+                        </li>
+                        <li>
+                            <a class="px-4 py-2 rounded-[1px] hover:text-light-green hover:ring focus:text-light-green focus:ring active:text-brown transition-all" 
+                                href="./tipe-rumah.html">Tipe Rumah</a>
+                        </li>
+                        <li>
+                            <a class="px-4 py-2 rounded-[1px] hover:text-light-green hover:ring focus:text-light-green focus:ring active:text-brown transition-all" 
+                                href="./tentang-kami.html">Tentang Kami</a>
+                        </li>
+                        <li>
+                            <a class="px-4 py-2 rounded-[1px] hover:text-light-green hover:ring focus:text-light-green focus:ring active:text-brown transition-all" 
+                                href="./kontak.html">Kontak</a>
+                        </li>
+                        <li>
+                            <a class="px-4 py-2 rounded-[1px] hover:text-light-green hover:ring focus:text-light-green focus:ring active:text-brown transition-all" 
+                                href="./blog.html">Blog</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <button class="lg:hidden size-[32px] flex items-center justify-center border border-brown rounded-md text-brown
+                    focus:bg-brown focus:text-fur-white transition-colors"
+                    id="openNavBtn">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </nav>
+        </header>
+
+        <section class="w-full py-8 md:py-10 flex items-center justify-center">
+            <div class="w-full px-8 lg:px-20">
+                <h1 class="text-[32px]/[40px] lg:text-[40px]/[55px] font-light">
+                    Selamat datang di 
+                    <span class="text-brown"> Warm Log Residence.</span>
+                </h1>
+                <p class="mt-[1rem] lg:mt-[1.5rem] text-[19px]/[28px] text-light-green">
+                    Nikmati kehangatan rumah kayu di tengah lanskap bersalju. Warm Log Residence menghadirkan suasana nyaman dengan desain rustic modern yang memanjakan setiap penghuninya.
+                </p>
+                <div class="w-full mt-[2rem] lg:mt-[3.5rem] flex gap-4">
+                    <a class="px-6 py-4 flex items-center justify-center gap-2 text-[16px] bg-light-green text-fur-white rounded-lg cursor-pointer
+                        hover:bg-dark-green focus:bg-dark-green hover:-translate-y-2 focus:-translate-y-2
+                        transition-all duration-[400ms]"
+                        href="./kontak.html">
+                        Kontak Kami <i class="fa-solid fa-square-phone-flip"></i>
+                    </a>
+                    <a class="px-6 py-4 text-[16px] bg-slate-200 bg-fur-white rounded-lg shadow-md cursor-pointer
+                        hover:-translate-y-2 hover:shadow-lg focus:-translate-y-2 focus:shadow-lg transition-all duration-[400ms]"
+                        href="./tipe-rumah.html">
+                        Info Detail
+                    </a>
+                </div>
+            </div>
+
+            <div class="hidden md:block w-full px-8 lg:px-20">
+                <img class="w-full aspect-square max-h-[500px] object-center object-cover rounded-xl"
+                    src="./img/1.jpg" alt="Main Image" />
+            </div>
+        </section>
+
+        <section class="w-full py-8 lg:py-10">
+            <h2 class="my-10 lg:my-20 text-[1.8rem] md:text-[2.3rem] lg:text-[3rem] text-center">
+                Fasilitas Eksklusif
+            </h2>
+
+            <div class="w-full mb-8 md:mb-0 flex flex-col-reverse md:flex-row items-start justify-center">
+                <div class="w-full">
+                    <div class="px-8 lg:px-10 md:py-8 lg:py-20 text-center md:text-right">
+                        <h3 class="my-2 md:my-0 md:mb-4 text-[1.3rem] md:text-[1.8rem] lg:text-[2rem]">
+                            Perapian Hangat di Dalam Rumah
+                        </h3>
+                        <p>Rasakan kenyamanan rumah kayu dengan perapian yang memberikan kehangatan sempurna di tengah musim dingin. Tempat ideal untuk bersantai bersama keluarga sambil menikmati secangkir cokelat hangat.</p>
+                    </div>
+                </div>
+                <div class="w-full flex items-center justify-center md:justify-start">
+                    <img class="w-full max-w-[400px] aspect-video md:aspect-square object-cover object-center rounded-xl shadow-md md:shadow-xl"
+                        src="./img/fasilitas/1.jpg" alt="perapian" class="img-fluid"/>
+                </div>
+            </div>
+            <div class="w-full mb-8 md:mb-0 flex flex-col-reverse md:flex-row-reverse items-start justify-center">
+                <div class="w-full">
+                    <div class="px-8 lg:px-10 md:py-8 lg:py-20 text-center md:text-left">
+                        <h3 class="my-2 md:my-0 md:mb-4 text-[1.3rem] md:text-[1.8rem] lg:text-[2rem]">
+                            Ruang Santai dengan Board Game
+                        </h3>
+                        <p>Habiskan waktu berkualitas bersama orang tersayang dengan koleksi board game menarik di ruang santai yang nyaman.</p>
+                    </div>
+                </div>
+                <div class="w-full flex items-center justify-center md:justify-end">
+                    <img class="w-full max-w-[400px] aspect-video md:aspect-square object-cover object-center rounded-xl shadow-md md:shadow-xl"
+                        src="./img/fasilitas/2.jpg" alt="board-game" class="img-fluid"/>
+                </div>
+            </div>
+            <div class="w-full mb-8 md:mb-0 flex flex-col-reverse md:flex-row items-start justify-center">
+                <div class="w-full">
+                    <div class="px-8 lg:px-10 md:py-8 lg:py-20 text-center md:text-right">
+                        <h3 class="my-2 md:my-0 md:mb-4 text-[1.3rem] md:text-[1.8rem] lg:text-[2rem]">
+                            Perapian Luar Ruangan
+                        </h3>
+                        <p>Berkumpul di sekitar perapian luar sambil menikmati suasana malam bersalju yang magis, ditemani obrolan hangat dan marshmallow panggang.</p>
+                    </div>
+                </div>
+                <div class="w-full flex items-center justify-center md:justify-start">
+                    <img class="w-full max-w-[400px] aspect-video md:aspect-square object-cover object-center rounded-xl shadow-md md:shadow-xl"
+                        src="./img/fasilitas/3.jpg" alt="perapian luar" class="img-fluid"/>
+                </div>
+            </div>
+            <div class="w-full mb-8 md:mb-0 flex flex-col-reverse md:flex-row-reverse items-start justify-center">
+                <div class="w-full">
+                    <div class="px-8 lg:px-10 md:py-8 lg:py-20 text-center md:text-left">
+                        <h3 class="my-2 md:my-0 md:mb-4 text-[1.3rem] md:text-[1.8rem] lg:text-[2rem]">
+                            Lapangan Hoki Pribadi
+                        </h3>
+                        <p>Untuk para penggemar olahraga musim dingin, tersedia lapangan hoki pribadi yang bisa digunakan kapan saja.</p>
+                    </div>
+                </div>
+                <div class="w-full flex items-center justify-center md:justify-end">
+                    <img class="w-full max-w-[400px] aspect-video md:aspect-square object-cover object-center rounded-xl shadow-md md:shadow-xl"
+                        src="./img/fasilitas/4.jpg" alt="lapangan-hoki" class="img-fluid"/>
+                </div>
+            </div>
+            <div class="w-full mb-8 md:mb-0 flex flex-col-reverse md:flex-row items-start justify-center">
+                <div class="w-full">
+                    <div class="px-8 lg:px-10 md:py-8 lg:py-20 text-center md:text-right">
+                        <h3 class="my-2 md:my-0 md:mb-4 text-[1.3rem] md:text-[1.8rem] lg:text-[2rem]">
+                            Area Snowboard
+                        </h3>
+                        <p>Rasakan sensasi bermain snowboard di lingkungan yang aman dan menyenangkan, langsung dari halaman rumah Anda.</p>
+                    </div>
+                </div>
+                <div class="w-full flex items-center justify-center md:justify-start">
+                    <img class="w-full max-w-[400px] aspect-video md:aspect-square object-cover object-center rounded-xl shadow-md md:shadow-xl"
+                        src="./img/fasilitas/5.jpg" alt="papan-snowboard" class="img-fluid"/>
+                </div>
+            </div>
+        </section>
+
+        <footer class="w-full mt-20 p-4 bg-dark-green text-fur-white text-center">
+            <p>
+                <a class="underline" href="https://kenjirl.github.io" target="_blank">
+                    Kencong
+                </a>
+                - 
+                <a class="underline" href="https://myskill.id/topic/frontend-project-portfolio" target="_blank">
+                    E-Learning MySkill 2025
+                </a>
+            </p>
+        </footer>
+
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+        <script src="./js/script.js"></script>
+    </div>
+</body>
+</html>
