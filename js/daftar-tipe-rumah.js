@@ -208,12 +208,13 @@ $(document).ready(function () {
     tipeRumah.forEach((item, index) => {
         if (index !== id) {
             daftarHTML += `
-                <div class="w-full rounded-lg border border-slate-300/50 shadow-md">
+                <a class="w-full rounded-lg border border-slate-300/50 shadow-md hover:bg-dark-green hover:text-white focus:bg-dark-green focus:text-white transition-colors duration-[400ms]"
+                    href="detail-rumah.html?id=${index}">
                     <div class="w-full flex items-center justify-start gap-2">
                         <img class="size-[75px] object-center object-cover rounded-tl-lg rounded-br-lg" src="./img/${index+1}.jpg" alt="${item.nama}">
-                        <a class="text-[1.2em] font-semibold" href="detail-rumah.html?id=${index}">
+                        <p class="text-[1.2em] font-semibold">
                             ${item.nama}
-                        </a>
+                        </p>
                     </div>
                     <div class="w-full p-2 flex items-center justify-center gap-2">
                         <div class="w-full">
@@ -238,7 +239,7 @@ $(document).ready(function () {
                             </p>
                         </div>
                     </div>
-                </div>
+                </a>
             `;
         }
     });

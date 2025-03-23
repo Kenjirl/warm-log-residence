@@ -65,7 +65,7 @@ $(document).ready(function () {
     tipeRumah.slice(-3).reverse().forEach((rumah, index) => {
         $("#blogTerbaruContainer")
             .append(`
-                <a class="block w-full pt-4 pb-8 mb-1 border-b border-brown font-light text-sm"
+                <a class="block w-full px-2 py-8 mb-1 rounded-md font-light text-sm hover:bg-dark-green hover:text-white focus:bg-dark-green focus:text-white transition-colors duration-[400ms]"
                     href="./detail-blog.html?id=${tipeRumah.length - (index + 1)}">
                     <h4 class="w-full mb-4 text-justify line-clamp-2">
                         <b>${rumah.judul}</b>. ${rumah.deskripsi}
@@ -76,6 +76,7 @@ $(document).ready(function () {
                         ${rumah.tanggal}
                     </span>
                 </a>
+                <hr class="my-2"/>
             `);
     });
 
